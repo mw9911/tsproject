@@ -245,7 +245,8 @@ public class MainActivity extends AppCompatActivity {
             }
             try{
                 BufferedWriter buf=new BufferedWriter(new FileWriter(file+"/files.txt",true));
-                buf.append(res);
+                //buf.append(res);
+                buf.write(res);
                 buf.newLine();
                 buf.close();
             }catch (Exception e) {
